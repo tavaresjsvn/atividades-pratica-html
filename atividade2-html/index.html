@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+        <b><h1>Formulário</h1></b>
+
+        <form action="/enviar-formulario"  method="post">
+            <div>
+                <label for="nome"><b>Nome:</b></label>
+                <br>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="idade"><b>Idade:</b></label>
+                <br>
+                <input type="number" id="idade" name="idade" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="email"><b>E-mail:</b></label>
+                <br>
+                <input type="email" id="email" name="email" title="Digite seu e-mail no formato: nome@exemplo.com" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="telefone"><b>Telefone:</b></label>
+                <br>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="site"><b>Site Pessoal:</b></label>
+                <br>
+                <input type="url" id="site" name="site" required>
+            </div>
+            <br>
+
+            <div>
+                <p><b>Turno de Estudo:</b></p>
+                <input type="radio" id="turnoManha" name="turno" value="manha" required>
+                <label for="turnoManha">Manhã</label>
+                <br>
+                <input type="radio" id="turnoTarde" name="turno" value="tarde">
+                <label for="turnoTarde">Tarde</label>
+                <br>
+                <input type="radio" id="turnoNoite" name="turno" value="noite">
+                <label for="turnoNoite">Noite</label>
+            </div>
+            <br>
+
+            <div>
+                <p><b>Qual sua área de interesse</b></p>
+                <input type="checkbox" id="interesseBanco" name="interesse" value="bancoDeDados">
+                <label for="interesseBanco">Banco de Dados</label>
+                <br>
+                <input type="checkbox" id="interesseProgramacao" name="interesse" value="programacao">
+                <label for="interesseProgramacao">Programação</label>
+                <br>
+                <input type="checkbox" id="interesseRedes" name="interesse" value="redes">
+                <label for="interesseReds">Redes</label>
+                <br>
+                <input type="checkbox" id="interesseDesign" name="interesse" value="design">
+                <label for="interesseDesign">Design</label>
+            </div>
+            <br>
+
+            <div>
+            <label for="curso"><b>Indique o curso:</b></label>
+            <br>
+            <select name="curso" id="curso" required>
+                <option value="">--Selecione um curso--</option>
+                <option value="informatica">Informática</option>
+                <option value="eletrotecnica">Eletrotécnica</option>
+                <option value="mecanica">Mecânica</option>
+                <option value="administracao">Administração</option>
+            </select>
+            </div>
+            <br>
+
+            <div>
+            <label for="fichaEscolar"><b>Anexe sua ficha escolar (apenas PDF):</b></label>
+            <br>
+            <input type="file" id="fichaEscolar" name="fichaEscolar" accept=".pdf" required>
+            </div>
+            <br>
+            <br>
+            
+            <div>
+                <label for="data-nascimento">Data de Nascimento:</label><br>
+                <input type="date" id="data-nascimento" name="data-nascimento">
+
+                <br>
+                <br>
+
+                <label for="horario-preferido">Horário de Atendimento Preferido:</label><br>
+                <input type="time" id="horario-preferido" name="horario-preferido">
+            </div>
+            <br>
+
+             <div>
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" name="senha" minlength="8" required> <br>
+                <br>
+
+                <label for="confirmacao-senha">Confirme a senha:</label><br>
+                <input type="password" id="confirmacao-senha" name="confirmacao-senha" required><br>
+                <br>
+            </div>
+            <br>
+
+
+            <div>
+                <label for="mensagem"><b>Mensagem:</b></label>
+                <br>
+                <textarea id="mensagem" name="mensagem" maxlength="200" rows="5" cols="40"></textarea>
+            </div>
+            <br>
+
+            <div>
+                <input type="submit" value="Enviar Formulário">
+            </div>
+
+            
+
+        </form>
+    </main>
+    
+</body>
+</html>
